@@ -1,0 +1,37 @@
+{
+	"manifest_version": 3,
+	"name": "TurBOTa for Chrome",
+	"description": "Check the cruelty-free status of the brands faster with TurBOTa for Chrome!",
+	"version": "1.3.1",
+	"icons": {
+	  "128": "icon.png"
+	},
+	"action": {
+	  "default_popup": "popup.html",
+	  "default_icon": "icon.png"
+	},
+	"content_scripts": [
+	  {
+		"matches": [
+		  "https://*/*"
+		],
+		"js": ["data.js", "jquery-3.6.0.min.js", "paginathing.js", "content.js"],
+		"run_at": "document_end"
+	  }
+	],
+	"permissions": [
+	  "storage",
+	  "notifications"
+	],
+	"web_accessible_resources": [
+	  {
+		"resources": ["data/DB.json"],
+		"matches": ["<all_urls>"]
+	  },
+	  {
+		"resources": ["LOGODATA/*"],
+		"matches": ["<all_urls>"]
+	  }
+	]
+  }
+  
