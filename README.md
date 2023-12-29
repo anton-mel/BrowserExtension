@@ -1,5 +1,7 @@
-![Banner](banner.jpeg)
 ![Extension Preview](Preview.png)
+<br/> <br/>
+
+![Banner](banner.jpeg)
 
 # TurBOTa for Chrome
 
